@@ -1,0 +1,11 @@
+version: "3"
+services:
+  flipt:
+    image: "docker.flipt.io/flipt/flipt:latest"
+    ports:
+      - "8080:8080"
+      - "9000:9000"
+    volumes:
+      - flipt:/var/opt/flipt
+volumes:
+  flipt:
