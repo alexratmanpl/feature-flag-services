@@ -6,7 +6,8 @@
 git clone https://github.com/featbit/featbit
 cd featbit
 
-docker compose up -d
+
+docker compose up -d // You might need to remove property 'name' from docker-compose.yml
 ```
 
 then service is available at
