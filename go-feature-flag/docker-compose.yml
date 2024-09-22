@@ -1,0 +1,11 @@
+version: "3"
+services:
+  goff:
+    image: "gofeatureflag/go-feature-flag:latest"
+    ports:
+      - "1031:1031"
+    volumes:
+      - ./config/flag-config.yaml:/goff/flag-config.yaml
+      - ./config/goff-proxy.yaml:/goff/goff-proxy.yaml
+volumes:
+  config:
